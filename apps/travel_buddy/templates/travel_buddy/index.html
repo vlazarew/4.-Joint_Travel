@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Login/Registration</title>
+        <title>Travel Buddy, Let's Go Party!</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
@@ -11,20 +11,22 @@
         <div class="container">
           <form class="container" action="/login" method="POST">
              {% csrf_token %}
-              <h2>Login</h2>
+              <h2>Travel Buddy, Let's Go Party!</h2>
+              <h4>Найди попутчиков и отправляйся в приключение!</h4>
+              <h5>Аутентификация</h5>
               <div class="row">
                 <div class="input-field col s12">
                   <input id="username" type="text" class="validate" name="username">
-                  <label for="username">Username</label>
+                  <label for="username">Логин</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
                   <input id="password" type="password" class="validate" name="password">
-                  <label for="password">Password</label>
+                  <label for="password">Пароль</label>
                 </div>
               </div>
-              <input type="submit" value="Login" class="waves-effect waves-light btn">
+              <input type="submit" value="Войти" class="waves-effect waves-light btn">
           </form>
         </div>
     </body>
